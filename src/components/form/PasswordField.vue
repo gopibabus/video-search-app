@@ -3,7 +3,9 @@
     <label for="passwordInput">Password</label>
     <input
       type="password"
+      :class="customClass"
       class="form-control"
+      :name="customName"
       id="passwordInput"
       placeholder="Password"
       v-model="password"
@@ -15,6 +17,7 @@
 <script>
 export default {
   name: "PasswordField",
+  props : ['customClass', 'customName'],
   data() {
     return {
       password: "",

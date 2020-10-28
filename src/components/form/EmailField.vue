@@ -3,7 +3,9 @@
     <label for="emailInput">Email address</label>
     <input
       type="email"
+      :class="customClass"
       class="form-control"
+      :name="customName"
       id="emailInput"
       placeholder="Enter email"
       v-model="email"
@@ -15,6 +17,7 @@
 <script>
 export default {
   name: "EmailField",
+  props : ['customClass', 'customName'],
   data() {
     return {
       email: "",

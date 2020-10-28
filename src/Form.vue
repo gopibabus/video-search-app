@@ -8,8 +8,16 @@
       <div class="alert alert-danger" role="alert" v-if="errors.password">
         Please enter password properly!!
       </div>
-      <EmailField @validateEmail="emailError"></EmailField>
-      <PasswordFeild @validatePassword="passwordError"></PasswordFeild>
+      <EmailField
+        @validateEmail="emailError"
+        :customClass="attributes.classes.email"
+        :customName="attributes.names.email"
+        />
+      <PasswordFeild
+        @validatePassword="passwordError"
+        :customClass="attributes.classes.password"
+        :customName="attributes.names.password"
+      />
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
@@ -37,6 +45,16 @@ export default {
       errors: {
         password: false,
         email: false,
+      },
+      attributes: {
+        classes: {
+        email: 'my-email',
+        password: 'my-password'
+      },
+      names: {
+        email: 'my-email',
+        password: 'my-password'
+      }
       },
     };
   },
