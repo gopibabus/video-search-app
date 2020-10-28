@@ -1,5 +1,6 @@
 <template>
   <div class="container" id="app">
+    <h1 class="mb-5 mt-5">Video Search Engine</h1>
     <SearchBar @termChange="onTermChange"></SearchBar>
     <div class="row">
       <VideoDetail :video="selectedVideo" />
