@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <h1 class="mb-5">Sign in Form</h1>
+    <h1 class="mb-5 text-center">Sign in Form</h1>
     <form id="login-form" @submit.prevent="processForm">
       <div class="alert alert-danger" role="alert" v-if="errors.email">
         Please enter email properly!!

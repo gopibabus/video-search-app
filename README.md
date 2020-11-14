@@ -1,4 +1,6 @@
-# video-browser-app
+![Video Browser App](./banner.png)
+
+> A simple app built on Vue.js to display youtube videos by consuming youtuber API.
 
 ## Project setup
 ```
